@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# This makefile should run download all necessary dependencies (including Node itself).\n# It will create local ./npm and ./node executables that can be used so you don't need\n# to pollute your global system.\n\nOS := $(shell uname | tr '[:upper:]' '[:lower:]')\nSITE_NAME=\"slate\"\n\nNODE_VERSION=v7.9.0\nNODE_PLATFORM=${OS}-x64\n\nYARN_VERSION=0.23.2\n\nNODE_DOWNLOAD=http://nodejs.org/dist/$(NODE_VERSION)/node-$(NODE_VERSION)-$(NODE_PLATFORM).tar.gz\nNODE_HOME=.node-local\nNODE_INSTALLED=$(NODE_HOME)/.installed-$(NODE_VERSION)-$(NODE_PLATFORM)\n\nHUGO_DOWNLOAD=https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}\nYARN_DOWNLOAD=https://yarnpkg.com/downloads/${YARN_VERSION}/yarn-v${YARN_VERSION}.tar.gz\n\nVERSION=$(shell git describe --always --tags)\nDIRTY=$(shell test -n \"`git status --porcelain`\" && echo \"+CHANGES\" || true)\n\nBUILD_DIR=bin\n\nDIST:=find * -type d -exec\n\ndefault: build\n\n.PHONY: help\nhelp:\n\t@echo 'Management commands for $(SITE_NAME):'\n\t@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = \":.*?## \"}; {printf \"  \\033[36m%-30s\\033[0m %s\\n\", $$1, $$2}'\n\n## Download and peform local install of Node (will not affect anything else on the system)\n.PHONY: install-node\ninstall-node: $(NODE_INSTALLED)\nbin/node bin/npm $(NODE_INSTALLED):\n\t@echo\n\t@echo === Downloading Node $(NODE_VERSION)... ===\n\trm -rf $(NODE_HOME)\n\tmkdir -p $(NODE_HOME)\n\tcurl $(NODE_DOWNLOAD) | tar xzf - --strip-components=1 --directory $(NODE_HOME)\n\trm -rf ./bin\n\tmkdir -p ./bin\n\tln -f -s ../$(NODE_HOME)/bin/node ./bin/\n\tln -f -s ../$(NODE_HOME)/bin/npm  ./bin/\n\ttouch $(NODE_INSTALLED)\n\n# Install Node library deps\n.PHONY: deps\ndeps: node_modules/.uptodate ## Install all dependencies\nnode_modules/.uptodate: bin/npm bin/yarn\n\t@echo\n\t@echo === Installing libraries via Yarn... ===\n\t./bin/yarn\n\tln -f -s ../node_modules/gulp/bin/gulp.js ./bin/gulp\n\ttouch $@\n\nbin/yarn:\n\t@echo\n\t@echo === Installing Yarn ===\n\trm -rf yarn\n\tmkdir -p yarn\n\tcurl -L ${YARN_DOWNLOAD} | tar xzf - --strip-components=1 --directory yarn\n\tln -f -s ../yarn/bin/yarn.js ./bin/yarn\n\n.PHONY: clean\nclean: ## Clean up all dependencies and compiled code\n\trm -rf .node-local bin node_modules dist data/hash\n\n.PHONY: build\nbuild: install-node deps site ## Compile the website\n\n.PHONY: site\nsite: ## Only make the site\n\t./bin/gulp build\n",
+    "created" : 1502144349444.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3667343526",
+    "id" : "1F938FF9",
+    "lastKnownWriteTime" : 1502046025,
+    "last_content_update" : 1502046025,
+    "path" : "~/workspace/R/webDevelopment/Portfolio_shiny/Makefile",
+    "project_path" : "Makefile",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "makefile"
+}
