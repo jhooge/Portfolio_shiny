@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nname = \"Slate\"\nlicense = \"MIT\"\nlicenselink = \"https://github.com/gesquive/slate/blob/master/LICENSE.md\"\ndescription = \"A speed dial theme\"\nhomepage = \"http://github.com/gesquive/slate\"\ntags = [\"speed-dial\", \"single-page\"]\nfeatures = []\nmin_version = \"0.20\"\n\n[author]\n  name = \"Gus Esquivel\"\n  homepage = \"https://github.com/gesquive\"\n",
+    "created" : 1502145896279.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3981952598",
+    "id" : "52AB5D0",
+    "lastKnownWriteTime" : 1502046025,
+    "last_content_update" : 1502046025,
+    "path" : "~/workspace/R/webDevelopment/Portfolio_shiny/theme.toml",
+    "project_path" : "theme.toml",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

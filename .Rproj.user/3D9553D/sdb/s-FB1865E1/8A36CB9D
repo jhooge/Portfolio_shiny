@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "baseURL = \"https://portfolio-shiny.netlify.com\"\nlanguageCode = \"en-us\"\ntitle = \"slate theme demo\"\ntheme = \"slate\"\n\npublishDir = \"docs\"\n\n[ params ]\nFavicon = \"favicon.ico\"\nOpenLinksInNewWindow = true\n\n[[ params.nav ]]\nname = \"statistics\"\ntag = \"statistics\"\nicon = \"bar-chart\"\n\n[[ params.nav ]]\nname = \"clustering\"\ntag = \"clustering\"\nicon = \"sitemap\"",
+    "created" : 1502145910563.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1508947900",
+    "id" : "8A36CB9D",
+    "lastKnownWriteTime" : 1502145919,
+    "last_content_update" : 1502145919126,
+    "path" : "~/workspace/R/webDevelopment/Portfolio_shiny/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

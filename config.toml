@@ -1,4 +1,4 @@
-baseURL = "http://portfolio-shiny.netlify.com"
+baseURL = "https://portfolio-shiny.netlify.com"
 languageCode = "en-us"
 title = "slate theme demo"
 theme = "slate"
