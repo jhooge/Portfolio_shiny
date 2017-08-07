@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "baseURL = \"http://example.org/\"\nlanguageCode = \"en-us\"\ntitle = \"slate theme demo\"\ntheme = \"slate\"\n\npublishDir = \"docs\"\n\n[ params ]\nFavicon = \"favicon.ico\"\nOpenLinksInNewWindow = true\n\n[[ params.nav ]]\nname = \"statistics\"\ntag = \"statistics\"\nicon = \"bar-chart\"\n\n[[ params.nav ]]\nname = \"clustering\"\ntag = \"clustering\"\nicon = \"sitemap\"",
+    "created" : 1502141203881.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3907636733",
+    "id" : "76F790EB",
+    "lastKnownWriteTime" : 1502141571,
+    "last_content_update" : 1502141571579,
+    "path" : "~/workspace/R/webDevelopment/Portfolio_shiny/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

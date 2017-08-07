@@ -1,0 +1,20 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "slate theme demo"
+theme = "slate"
+
+publishDir = "docs"
+
+[ params ]
+Favicon = "favicon.ico"
+OpenLinksInNewWindow = true
+
+[[ params.nav ]]
+name = "statistics"
+tag = "statistics"
+icon = "bar-chart"
+
+[[ params.nav ]]
+name = "clustering"
+tag = "clustering"
+icon = "sitemap"

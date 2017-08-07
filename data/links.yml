@@ -1,0 +1,11 @@
+tiles:
+-
+  name: "Bayesian Sample Size Calculation"
+  url: "https://jhooge.shinyapps.io/bayesian_sample_size_calculation/"
+  img: "logos/bayesian_sample_size_logo.png"
+  tags: ["statistics"]
+-
+  name: "Model Based Mixture Modeling"
+  url: "https://jhooge.shinyapps.io/MixtureModeling/"
+  img: "logos/mixture_modeling.png"
+  tags: ["clustering"]

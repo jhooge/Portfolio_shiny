@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "tiles:\n-\n  name: \"Bayesian Sample Size Calculation\"\n  url: \"https://jhooge.shinyapps.io/bayesian_sample_size_calculation/\"\n  img: \"logos/bayesian_sample_size_logo.png\"\n  tags: [\"statistics\"]\n-\n  name: \"Model Based Mixture Modeling\"\n  url: \"https://jhooge.shinyapps.io/MixtureModeling/\"\n  img: \"logos/mixture_modeling.png\"\n  tags: [\"clustering\"]\n",
+    "created" : 1502139262625.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "494965842",
+    "id" : "BAC7C1A4",
+    "lastKnownWriteTime" : 1502141559,
+    "last_content_update" : 1502141559858,
+    "path" : "~/workspace/R/webDevelopment/Portfolio_shiny/data/links.yml",
+    "project_path" : "data/links.yml",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}
