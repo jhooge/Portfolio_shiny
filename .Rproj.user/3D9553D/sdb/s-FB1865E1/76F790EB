@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "baseURL = \"https://portfolio-shiny.netlify.com\"\nlanguageCode = \"en-us\"\ntitle = \"slate theme demo\"\ntheme = \"slate\"\n\npublishDir = \"docs\"\n\n[ params ]\nFavicon = \"favicon.ico\"\nOpenLinksInNewWindow = true\n\n[[ params.nav ]]\nname = \"statistics\"\ntag = \"statistics\"\nicon = \"bar-chart\"\n\n[[ params.nav ]]\nname = \"clustering\"\ntag = \"clustering\"\nicon = \"sitemap\"",
+    "contents" : "baseURL = \"http://portfolio-shiny.netlify.com\"\nlanguageCode = \"en-us\"\ntitle = \"slate theme demo\"\ntheme = \"slate\"\n\npublishDir = \"docs\"\n\n[ params ]\nFavicon = \"favicon.ico\"\nOpenLinksInNewWindow = true\n\n[[ params.nav ]]\nname = \"statistics\"\ntag = \"statistics\"\nicon = \"bar-chart\"\n\n[[ params.nav ]]\nname = \"clustering\"\ntag = \"clustering\"\nicon = \"sitemap\"",
     "created" : 1502141203881.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1508947900",
+    "hash" : "70280131",
     "id" : "76F790EB",
-    "lastKnownWriteTime" : 1502143527,
-    "last_content_update" : 1502143527041,
+    "lastKnownWriteTime" : 1502143990,
+    "last_content_update" : 1502143990873,
     "path" : "~/workspace/R/webDevelopment/Portfolio_shiny/config.toml",
     "project_path" : "config.toml",
     "properties" : {
